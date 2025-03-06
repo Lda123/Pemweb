@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dengucare - Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to right, #800000, #FF5733);
+        }
+
+        .container {
+            display: flex;
+            width: 60%;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .form-container {
+            width: 50%;
+            padding: 40px;
+        }
+
+        .info-container {
+            width: 50%;
+            background: linear-gradient(to right, #800000, #FF5733);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #800000;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #800000;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #a52a2a;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h2>Masuk ke Dengucare</h2>
+            <input type="text" placeholder="Email" id="email">
+            <input type="password" placeholder="Password" id="password">
+            <button onclick="login()">Masuk</button>
+            <p>Belum punya akun? <a href="signup.html">Daftar</a></p>
+        </div>
+
+        <div class="info-container">
+            <div>
+                <h2>Selamat Datang di Dengucare</h2>
+                <p>Platform inovatif untuk meningkatkan kesadaran dan informasi mengenai DBD.</p>
+                <button>Pelajari Lebih Lanjut</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function login() {
+            alert("Login berhasil!");
+        }
+    </script>
+</body>
+
+</html>
